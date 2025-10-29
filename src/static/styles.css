@@ -88,13 +88,32 @@ section h3 {
 
 .participants-list ul {
   list-style-type: none;
-  padding-left: 10px;
+  padding-left: 0;
 }
 
 .participants-list li {
   font-size: 0.85em;
   color: #666;
   margin-bottom: 3px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 0;
+}
+
+.delete-participant {
+  background: none;
+  border: none;
+  color: #dc3545;
+  padding: 4px 8px;
+  cursor: pointer;
+  font-size: 0.9em;
+  transition: color 0.2s;
+}
+
+.delete-participant:hover {
+  color: #c82333;
+  background: none;
 }
 
 .form-group {
